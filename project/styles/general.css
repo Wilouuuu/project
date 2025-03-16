@@ -1,0 +1,127 @@
+.header p{
+  font-size: 22px;
+  color: white;
+}
+p{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: 	#2D2D2D;
+  padding-top: 80px ;
+  margin: 0;
+}
+@media (max-width: 1200px) {
+  
+  .main-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 50px;
+    margin-inline: 30px;
+  }
+  
+  .product-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .product-image {
+    min-width: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .header {
+    padding-inline: 20px;
+  }
+  
+  .left-section {
+    gap: 20px;
+  }
+  
+  .left-section p {
+    font-size: 18px;
+  }
+  
+  .main-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-inline: 20px;
+  }
+  
+  .search-bar {
+    width: 70%;
+  }
+  
+  .product-details {
+    padding: 20px;
+  }
+  
+  .size-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .main-grid {
+    grid-template-columns: 1fr;
+    margin-inline: 15px;
+  }
+  
+  .header {
+    padding-inline: 15px;
+  }
+  
+  .left-section {
+    gap: 15px;
+  }
+  
+  .left-section p {
+    font-size: 16px;
+  }
+  
+  .search-bar {
+    width: 65%;
+    font-size: 16px;
+  }
+  
+  .product-details h1 {
+    font-size: 28px;
+  }
+  
+  .price {
+    font-size: 24px;
+  }
+  
+  .size-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .add-to-cart {
+    width: 100%;
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+  
+  .image-controls button {
+    font-size: 20px;
+    padding: 8px;
+  }
+}

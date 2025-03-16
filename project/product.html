@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/product.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <script src="script/product-script.js" defer></script>
+  <script src="script/cart.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="left-section">
+      <span class="brand">
+        <a href="home.html">
+          <img class="shirt" src="pictures/icons/brand.svg" href="home.html">
+        </a>
+      </span>
+      <a href="home.html"><p>Home</p></a>
+      <a href="#"><p>About us</p></a>
+    </div>
+    <div class="right-section">
+      <div class="manegment">
+        <button class="heart-button"><img class="heart-icon" src="pictures/icons/heart.svg"></button>
+        <a href="cart.html"><button class="cart-button"><img class="cart-icon" src="pictures/icons/cart.svg"></button></a>
+        <button class="account-button"><img class="account-icon" src="pictures/icons/account.svg"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="product-page">
+    <div class="product-container">
+      <div class="product-image">
+        <img id="main-image" src="" alt="Product Image">
+        <div class="image-controls">
+          <button class="prev-button" onclick="changeImage(-1)">&#10094;</button>
+          <button class="next-button" onclick="changeImage(1)">&#10095;</button>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <h1></h1>
+        <p class="price"></p>
+        <p class="description"></p>
+        <p class="colors"></p>
+
+        <div class="size-selection">
+          <label>Select Size:</label>
+          <div class="size-buttons">
+          </div>
+        </div>
+
+        <button class="add-to-cart js-add-to-cart">Add to cart</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We are a leading clothing store offering the latest trends in men's, women's, and kids' fashion.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: waliddrici35@gmail.com</p>
+        <p>Phone: +213 657577309</p>
+        <p>Address: abdalhamidmehri 2</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/walid.maderid.3"><img src="pictures/icons/facebook.svg" alt="Facebook"></a>
+          <a href="https://www.tiktok.com/@walid_drici?lang=en"><img src="pictures/icons/TikTok.svg" alt="TikTok"></a>
+          <a href="https://www.instagram.com/walid__drici/"><img src="pictures/icons/instagram.svg" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2023 Clothing Store. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

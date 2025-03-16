@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Store</title>
+  <script src="script/home-script.js" defer></script>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/maingrid.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+  <header class="header">
+    <div class="left-section">
+      <span class="brand">
+        <a href="home.html">
+          <img class="shirt" src="pictures/icons/brand.svg" href="home.html">
+        </a>
+      </span>
+      <a href="home.html"><p>Home</p></a>
+      <a href="#"><p>About us</p></a>
+    </div>
+    <div class="right-section">
+      <div class="manegment">
+        <button class="heart-button"><img class="heart-icon" src="pictures/icons/heart.svg"></button>
+        <a href="cart.html"><button class="cart-button"><img class="cart-icon" src="pictures/icons/cart.svg"></button></a>
+        <button class="account-button"><img class="account-icon" src="pictures/icons/account.svg"></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-bar-box">
+    <input class="search-bar" type="text" placeholder="Search" onkeyup="search()">
+    <button class="search-button"><img class="search-icon" src="pictures/icons/search.svg"></button>
+  </div>
+
+  
+  <div class="filter-section">
+    <button class="filter-button" data-category="all">All</button>
+    <button class="filter-button" data-category="shoes">Shoes</button>
+    <button class="filter-button" data-category="jackets">Jackets</button>
+    <button class="filter-button" data-category="pants">Pants</button>
+  </div>
+
+  <main class="main-grid js-products-grid"></main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We are a leading clothing store offering the latest trends in men's, women's, and kids' fashion.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: waliddrici35@gmail.com</p>
+        <p>Phone: +213 657577309</p>
+        <p>Address: abdalhamidmehri 2</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/walid.maderid.3"><img src="pictures/icons/facebook.svg" alt="Facebook"></a>
+          <a href="https://www.tiktok.com/@walid_drici?lang=en"><img src="pictures/icons/TikTok.svg" alt="TikTok"></a>
+          <a href="https://www.instagram.com/walid__drici/"><img src="pictures/icons/instagram.svg" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2023 Clothing Store. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

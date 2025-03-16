@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/cart.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/checkout.css">
+  <script src="script/cart.js" defer></script>
+  <script src="script/checkout.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="left-section">
+      <span class="brand">
+        <a href="home.html">
+          <img class="shirt" src="pictures/icons/brand.svg" href="home.html">
+        </a>
+      </span>
+      <a href="home.html"><p>Home</p></a>
+      <a href="#"><p>About us</p></a>
+    </div>
+    <div class="right-section">
+      <div class="manegment">
+        <button class="heart-button"><img class="heart-icon" src="pictures/icons/heart.svg"></button>
+        <a href="cart.html"><button class="cart-button"><img class="cart-icon" src="pictures/icons/cart.svg"></button></a>
+        <button class="account-button"><img class="account-icon" src="pictures/icons/account.svg"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="checkout-page">
+    <div class="checkout-container">
+      <h1>Checkout</h1>
+
+      <!-- Shipping and Payment Form -->
+      <div class="checkout-form">
+        <h2>Shipping Information</h2>
+        <form id="shipping-form">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" required>
+
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" required>
+
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip" name="zip" required>
+
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" required>
+        </form>
+
+        <h2>Payment Information</h2>
+        <form id="payment-form">
+          <label for="card-number">Card Number</label>
+          <input type="text" id="card-number" name="card-number" required>
+
+          <label for="expiry">Expiry Date</label>
+          <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" required>
+        </form>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="cart-items">
+          <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div class="cart-summary">
+          <p>Total: $0.00</p>
+          <button class="place-order-button">Place Order</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We are a leading clothing store offering the latest trends in men's, women's, and kids' fashion.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: waliddrici35@gmail.com</p>
+        <p>Phone: +213 657577309</p>
+        <p>Address: abdalhamidmehri 2</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/walid.maderid.3"><img src="pictures/icons/facebook.svg" alt="Facebook"></a>
+          <a href="https://www.tiktok.com/@walid_drici?lang=en"><img src="pictures/icons/TikTok.svg" alt="TikTok"></a>
+          <a href="https://www.instagram.com/walid__drici/"><img src="pictures/icons/instagram.svg" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2023 Clothing Store. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
